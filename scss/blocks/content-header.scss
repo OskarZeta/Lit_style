@@ -1,0 +1,28 @@
+.content_header{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffac48;
+  position: relative;
+  h2{
+    font-size: 18px;
+    font-weight: bold;
+    color: #191919;
+  }
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #ffac48;
+    left: 0;
+    bottom: -6px;
+  }
+}
+.content-header__icon{
+  font-size: 18px;
+  font-weight: bold;
+  color: #8b8b8b;
+  margin-right: 22px;
+}

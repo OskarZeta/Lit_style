@@ -1,0 +1,39 @@
+.item-symbols{
+  position: absolute;
+  top: 5px;
+  left: 4.5px;
+  div{
+    width: 37px;
+    height: 37px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5px;
+    svg, span, b{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+.item-symbols__hit{
+  background-color: #fb6c1e;
+  font-size: 11px;
+  margin-bottom: 3px;
+}
+.item-symbols__new{
+  background-color: #555555;
+  font-size: 9px;
+  margin-bottom: 3px;
+}
+.item-symbols__share{
+  background-color: #99c45a;
+  font-size: 17px;
+  margin-bottom: 3px;
+  b{
+    line-height: 17px;
+  }
+  span{
+    font-size: 8px;
+  }
+}

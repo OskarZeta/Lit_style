@@ -1,0 +1,17 @@
+.container{
+  width: 1170px;
+  display: flex;
+  //padding: 0 10px;
+  margin: 0 auto;
+}
+.container--header{
+  justify-content: space-between;
+  align-items: stretch;
+}
+.container--main-menu{
+  justify-content: space-between;
+  position: relative;
+}
+.container--footer{
+  justify-content: space-between;
+}

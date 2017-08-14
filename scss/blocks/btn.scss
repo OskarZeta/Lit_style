@@ -1,0 +1,43 @@
+.btn{
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  background-color: #ffb144;
+  padding: 11px;
+  min-width: 132px;
+  margin: 15px;
+  &:hover{
+    background-color: #d3882e;
+  }
+}
+.btn--news{
+  display: block;
+  width: 190px;
+  font-size: 14px;
+  color: #535353;
+  background-color: #e8e8e8;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  &:hover{
+    background-color: #ffb144;
+    color: white;
+  }
+}
+.btn--article{
+  position: absolute;
+  right: 9px;
+  bottom: -35px;
+  background-color: #3b3b3b;
+  min-width: 108px;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  &:hover{
+    background-color: #ffb144;
+  }
+}

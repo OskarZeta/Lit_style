@@ -1,0 +1,137 @@
+.navigation{
+  position: absolute;
+  //left: 50%;
+  top: 50%;
+  left: -13px;
+  margin-top: -74px;
+  display: flex;
+  div{
+    width: 26px;
+    height: 71px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0.5px 0.866px 18px 0 rgba(0, 1, 2, 0.5);
+  }
+  .navigation__prev, .navigation__next{
+    &::before, &::after{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -9px;
+      content: "";
+      display: block;
+      width: 14px;
+      height: 1px;
+      background-color: #979797;
+    }
+    &::before{
+      transform: rotate(45deg);
+      margin-top: 6px;
+    }
+    &::after{
+      transform: rotate(-45deg);
+      margin-top: -5px;
+    }
+    &:hover{
+      background-color: #474747;
+      &::before, &::after{
+        background-color: #f3ca3a;
+      }
+    }
+  }
+  .navigation__prev{
+    &::before{
+      margin-top: 5px;
+    }
+    &::after{
+      margin-top: -4px;
+    }
+  }
+  .navigation__next{
+    margin-left: 841px;
+    &::before, &::after{
+      margin-left: -7px;
+    }
+    &::before{
+      margin-top: -4px;
+    }
+    &::after{
+      margin-top: 5px;
+    }
+  }
+}
+.navigation--advertisement{
+  //left: 270px;
+  left: 50%;
+  margin-left: -280px;
+  //top: 50%;
+  margin-top: -26px;
+  //display: flex;
+  div{
+    width: 47px;
+    height: 52px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  .navigation__prev, .navigation__next{
+    &::before, &::after{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -9px;
+      content: "";
+      display: block;
+      width: 16px;
+      height: 1px;
+      background-color: black;
+    }
+    &::before{
+      transform: rotate(45deg);
+      margin-top: 6px;
+    }
+    &::after{
+      transform: rotate(-45deg);
+      margin-top: -5px;
+    }
+    &:hover{
+      background-color: #00736a;
+      &::before, &::after{
+        background-color: white;
+      }
+    }
+  }
+  .navigation__prev{
+    &::before{
+      margin-top: 6px;
+    }
+    &::after{
+      margin-top: -5px;
+    }
+  }
+  .navigation__next{
+    margin-left: 771px;
+    &::before, &::after{
+      margin-left: -8px;
+    }
+    &::before{
+      margin-top: -5px;
+    }
+    &::after{
+      margin-top: 6px;
+    }
+  }
+}
+.navigation--newest-products{
+  margin-top: -60px;
+  .navigation__prev, .navigation__next{
+    z-index: 4;
+  }
+}
+.navigation--high-demand{
+  margin-top: -130px;
+}
