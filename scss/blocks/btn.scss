@@ -21,10 +21,14 @@
   background-color: #e8e8e8;
   margin: 0 auto;
   padding-bottom: 15px;
+  cursor: pointer;
   &:hover{
     background-color: #ffb144;
     color: white;
   }
+}
+.btn--shown{
+
 }
 .btn--article{
   position: absolute;

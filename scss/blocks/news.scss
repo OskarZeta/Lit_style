@@ -8,6 +8,7 @@
   padding-top: 40px;
 }
 .news__slide{
+  display: none;
   border: 6px solid #ffb144;
   width: 270px;
   min-height: 282px;
@@ -34,6 +35,9 @@
     text-transform: uppercase;
     color: #5e5e5e;
   }
+}
+.news__slide--visible{
+  display: block;
 }
 .news__date{
   position: absolute;

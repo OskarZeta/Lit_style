@@ -1,19 +1,19 @@
 "use strict";
 
-var gulp = require("gulp");
-var imagemin = require("gulp-imagemin");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync");
-//var mqpacker = require("css-mqpacker");
-var minify = require("gulp-csso");
-var rename = require("gulp-rename");
-var svgstore = require("gulp-svgstore");
-var svgmin = require("gulp-svgmin");
-var run = require("run-sequence");
-var del = require("del");
+let gulp = require("gulp");
+let imagemin = require("gulp-imagemin");
+let sass = require("gulp-sass");
+let plumber = require("gulp-plumber");
+let postcss = require("gulp-postcss");
+let autoprefixer = require("autoprefixer");
+let server = require("browser-sync");
+//let mqpacker = require("css-mqpacker");
+let minify = require("gulp-csso");
+let rename = require("gulp-rename");
+let svgstore = require("gulp-svgstore");
+let svgmin = require("gulp-svgmin");
+let run = require("run-sequence");
+let del = require("del");
 
 gulp.task("style", function(){
 	gulp.src("scss/style.scss")
@@ -106,8 +106,8 @@ gulp.task("clean", function(){
 
 /*(function (r) {
     "use strict";
-    var scss = r("gulp-scss");
-    var gulp = r("gulp");
+    let scss = r("gulp-scss");
+    let gulp = r("gulp");
     gulp.task("scss", function () {
         gulp.src(
             "scss/*.scss"
