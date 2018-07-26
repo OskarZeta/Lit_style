@@ -18,11 +18,14 @@
     "gulp-serve": "^1.4.0",
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.0",
+    "jquery": "^3.3.1",
     "normalize.scss": "^0.1.0",
+    "owl.carousel": "^2.3.4",
     "run-sequence": "^2.1.0"
   },
   "scripts": {
     "build": "gulp build",
+    "serve": "gulp serve",
     "start": "npm run build && gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

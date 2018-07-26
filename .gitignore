@@ -1,7 +1,7 @@
-build/
 node_modules/
 trash/
 css/
 .DS_Store
 Thumbs.db
 .idea/
+package-lock.json

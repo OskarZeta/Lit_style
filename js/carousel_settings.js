@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    let owl = $('.advertisement__carousel');
+    let owl = $('.top-slider__carousel');
     owl.owlCarousel({
         nav: false,
         navText: false,
@@ -11,12 +11,12 @@ $(document).ready(function () {
     owl.on('changed.owl.carousel', function(e){
         let num = e.item.index+1;
         $('.owl-dot').removeClass('active');
-        $(".advertisement__navigation-dots").find('[id="'+num+'"]').addClass('active');
+        $(".top-slider__navigation-dots").find('[id="'+num+'"]').addClass('active');
     });
-    $('.navigation--advertisement .navigation__prev').click(function () {
+    $('.navigation--top-slider .navigation__prev').click(function () {
         owl.trigger('prev.owl.carousel');
     });
-    $('.navigation--advertisement .navigation__next').click(function () {
+    $('.navigation--top-slider .navigation__next').click(function () {
         owl.trigger('next.owl.carousel');
     });
     $('.owl-dot').click(function () {

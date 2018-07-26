@@ -20,11 +20,8 @@
   &::after{
     content: "";
     display: block;
-    //width: 377px;
     width: 361px;
     height: calc(100% - 16px);
-    //height: 100%;
-    //min-height: 261px;
     position: absolute;
     top: 0;
     right: 0;
@@ -32,17 +29,13 @@
   }
 }
 .articles-block__img-container{
-  //position: absolute;
   display: flex;
-  //min-height: 261px;
   img{
     margin: auto;
     z-index: 1;
   }
 }
 .articles-block__description{
-  //padding-left: 232px;
-  //padding-left: 55%;
   padding-left: 25px;
   padding-right: 50px;
   padding-bottom: 10px;
@@ -52,8 +45,6 @@
     line-height: 15px;
     text-transform: uppercase;
     color: #fea528;
-
-    //text-align: start;
     &::after{
       content: "";
       display: block;

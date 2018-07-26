@@ -28,10 +28,7 @@ gulp.task("style", function(){
 				"last 2 Edge versions"
 			]})
 		]))
-		.pipe(gulp.dest("build/css"))
-		/*.pipe(minify())
-		.pipe(rename("style.min.css"))
-		.pipe(gulp.dest("build/css"))*/
+		.pipe(gulp.dest("css"))
         .pipe(server.reload({stream: true}));
 });
 
@@ -63,7 +60,7 @@ gulp.task("symbols", function(){
 
 gulp.task("serve", function(){
 	server.init({
-		server: "build"
+		server: "."
 	});
     gulp.watch("scss/*.scss", ["style"]);
     gulp.watch("scss/blocks/*.scss", ["style"]);
@@ -72,13 +69,14 @@ gulp.task("serve", function(){
 });
 
 gulp.task("build", function(fn){
-	run("clean", "copy", "style", "images", "symbols", "minify-css", fn);
+	run("clean", "minify-css", "copy", "images", "symbols", fn);
 });
 
 gulp.task("copy", function(){
 	return gulp.src([
 		"images/**",
 		"fonts/**",
+	  	"css/**",
 		"js/**",
 		"*.html"
 		], {
@@ -94,23 +92,9 @@ gulp.task("copy_html", function(){
     	], {
         	base: "."
     	})
-        .pipe(gulp.dest("build"))
 		.pipe(server.reload({stream: true}));
 });
 
 gulp.task("clean", function(){
 	return del("build");
 });
-
-//gulp.task('serve', serve('public'));
-
-/*(function (r) {
-    "use strict";
-    let scss = r("gulp-scss");
-    let gulp = r("gulp");
-    gulp.task("scss", function () {
-        gulp.src(
-            "scss/*.scss"
-        ).pipe(scss()).pipe(gulp.dest("css"));
-    });
-}(require));*/

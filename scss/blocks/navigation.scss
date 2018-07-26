@@ -1,6 +1,5 @@
 .navigation{
   position: absolute;
-  //left: 50%;
   top: 50%;
   left: -13px;
   margin-top: -74px;
@@ -62,13 +61,10 @@
     }
   }
 }
-.navigation--advertisement{
-  //left: 270px;
+.navigation--top-slider{
   left: 50%;
   margin-left: -280px;
-  //top: 50%;
   margin-top: -26px;
-  //display: flex;
   div{
     width: 47px;
     height: 52px;
